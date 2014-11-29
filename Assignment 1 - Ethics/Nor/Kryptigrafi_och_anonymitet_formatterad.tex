@@ -1,0 +1,321 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.2
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[twocolumn,a4paper,12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage[top=0.7874in,bottom=0.7874in,left=0.7874in,right=0.7874in,nohead,nofoot]{geometry}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{hyperref}
+\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=}
+\usepackage[pdftex]{graphicx}
+% Headings and outline numbering
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0.0cm}{0.1665in}{0.0835in}{\normalfont\normalsize\normalcolor\fontsize{24pt}{28.8pt}\selectfont\rmfamily\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{0.0cm}{0.1665in}{0.0835in}{\normalfont\normalsize\normalcolor\fontsize{14pt}{16.8pt}\selectfont\sffamily\bfseries\itshape}}
+\renewcommand\@seccntformat[1]{\csname @textstyle#1\endcsname{\csname the#1\endcsname}\csname @distance#1\endcsname}
+\setcounter{secnumdepth}{0}
+\newcommand\@distancesection{}
+\newcommand\@textstylesection[1]{#1}
+\newcommand\@distancesubsection{}
+\newcommand\@textstylesubsection[1]{#1}
+\makeatother
+\raggedbottom
+% Paragraph styles
+\renewcommand\familydefault{\rmdefault}
+\newenvironment{stylePv}{\clearpage\setlength\leftskip{0cm plus 1fil}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\normalcolor\fontsize{15pt}{18.0pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{stylePiv}{\setlength\leftskip{0cm plus 1fil}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\normalcolor\fontsize{14pt}{16.8pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{stylePi}{\setlength\leftskip{0cm}\setlength\rightskip{0cm}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\normalcolor\fontsize{11pt}{13.2pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{stylePiii}{\setlength\leftskip{0cm}\setlength\rightskip{0cm}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\normalcolor\fontsize{11pt}{13.2pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{stylePii}{\setlength\leftskip{0cm}\setlength\rightskip{0cm}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\normalcolor\fontsize{11pt}{13.2pt}\selectfont\itshape\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{styleStandard}{\setlength\leftskip{0cm}\setlength\rightskip{0cm}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\normalcolor\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{stylePvii}{\setlength\leftskip{0cm}\setlength\rightskip{0cm}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\normalcolor\fontsize{11pt}{13.2pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+% List styles
+\newcommand\writerlistleftskip{}
+\newcommand\writerlistparindent{}
+\newcommand\writerlistlabel{}
+\newcommand\writerlistremovelabel{\aftergroup\let\aftergroup\writerlistparindent\aftergroup\relax\aftergroup\let\aftergroup\writerlistlabel\aftergroup\relax}
+% Footnote rule
+\setlength{\skip\footins}{0.0469in}
+\renewcommand\footnoterule{\vspace*{-0.0071in}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\textcolor{black}{\rule{0.25\columnwidth}{0.0071in}}\vspace*{0.0398in}}
+% Pages styles
+\fancypagestyle{Standard}{\fancyhf{}
+  \fancyhead[L]{}
+  \fancyfoot[L]{}
+  \renewcommand\headrulewidth{0pt}
+  \renewcommand\footrulewidth{0pt}
+  \renewcommand\thepage{\arabic{page}}
+}
+\fancypagestyle{FirstPage}{\fancyhf{}
+  \fancyhead[L]{}
+  \fancyfoot[L]{}
+  \renewcommand\headrulewidth{0pt}
+  \renewcommand\footrulewidth{0pt}
+  \renewcommand\thepage{\arabic{page}}
+}
+\pagestyle{Standard}
+\sloppy
+\title{}
+\begin{document}
+\clearpage\setcounter{page}{1}\pagestyle{Standard}
+\thispagestyle{FirstPage}
+\section[Kryptografi \& Anonymitet: ]{\fontsize{20pt}{24.0pt}\selectfont Kryptografi \& Anonymitet: }
+\section[Etik och juridik i konflikt]{\fontsize{16pt}{19.2pt}\selectfont Etik och juridik i konflikt}
+\begin{stylePv}
+Victor Rudolfsson
+\end{stylePv}
+
+\begin{stylePiv}
+Høgskolen i Gjøvik
+\end{stylePiv}
+
+\begin{stylePiv}
+Gjøvik, Norge
+\end{stylePiv}
+
+
+\bigskip
+
+
+\bigskip
+
+\begin{stylePi}
+I dagens samhälle advokerar ett ökande antal organisationer och regimer för en centraliserad lösning av förvaring och indexering av sin egen och befolkningens data, genom föreslagna och införda lagar\textsuperscript{[10]} och policies ämnade att öka brottsbekämpning. 
+\end{stylePi}
+
+\begin{stylePi}
+Samtidigt advokerar ett ökande antal individer och kollektiv ofta benämnda \textit{cypherpunks} eller \textit{kryptoanarkister} för en mer decentralizerad lösning för att säkra information (och privatliv) baserat på kryptografiska algoritmer.
+\end{stylePi}
+
+
+\bigskip
+
+\begin{stylePiii}
+En fråga vi tvingas ställa oss är varesig vår data någonsin är säker, och vem eller vilka vi vill ge ansvaret att säkra vår data. Men än viktigare är kanske frågan om varesig en centraliserad lösning är att föredra över en decentraliserad lösning till att börja med. Flera av de lagar ämnade att öka brottsbekämpning genom att samla in, förvara och indexera data sägs vara ämnade särskilt för att komma åt de som begår andra slags brott, så som distribuering av barnpornografi, terrorism och ekonomiskt relaterade brott.
+\end{stylePiii}
+
+
+\bigskip
+
+\begin{stylePiii}
+Men när majoriteten av en befolkning är övervakad näst intill (om inte) konstant, och deras kommunikation därefter sparad och indexerad, kan denna information verkligen användas för att bidra till brottsbekämpning I den mån det framställs vara ämnade för, när de som de sägs vara ämnade att övervaka utan större svårigheter kan \ undkomma övervakning genom diverse kryptografiska algoritmer och protokoll för att säkra sin kommunikation? Och kommer det isådanafall ställa till ytterligare problem vi tvingas lösa för att uppnå den önskade nivån av rättsamhälle?
+\end{stylePiii}
+
+\begin{stylePi}
+Det finns många olika tekniker som kan tillämpas för att kryptera överföring idag, och än fler alternativ till de olika teknikerna (\textit{IPSec}, \textit{SSL }\& \textit{PPTP }för VPN, \textit{SSL, }eller\textit{ SSL/TLS, TOR}\textsuperscript{[4]}\textit{, }och \textit{I2P, }etc\textit{), }men även jag kommer i huvudsak rikta in mig på att kortfattat beskriva hur några av de mest vanliga krypteringsprotokollen för datakommunikation fungerar, och försöka ta reda på huruvida dessa kan användas för att säkra kommunikation på ett decentraliserat vis, och om en centraliserad lösning isådanafall kommer att behövas, samt om en decentraliserad och centraliserad lösning kan komma att hamna i konflikt.
+\end{stylePi}
+
+
+\bigskip
+
+
+\bigskip
+
+\begin{stylePi}
+Data som överförs via internet skickas med hjälp av ett eller flera av de tillgängliga protokollen för överföring -- de som tas upp här är huvudsakligen TCP\textsuperscript{[1] }och UDP\textsuperscript{[2]}, eftersom det är de som används av TOR, SSL/TLS, och OpenVPN vilka är de protokoll jag valt att fokusera på. \textit{Se bilaga nr 1 för en illustration av ett TCP paket.}
+\end{stylePi}
+
+
+\bigskip
+
+\begin{stylePi}
+Eftersom TCP/IP inte är ett enda protokoll, utan en \ samling av flera protokoll, är de olika protokollens ansvarsområden uppdelade i olika \textit{lager}\textsuperscript{[3]}. TCP har fyra olika lager (av vilka var och ett kan länkas samman med ett eller flera lager i OSI-modellen), och eftersom ansvaret för kryptering tilldelas \textit{transport }lagret i ett TCP paket, är det där de flesta av protokollen som nämns har sin plats.
+\end{stylePi}
+
+\subsection[SecureSocketLayer/TransferLayerSecurity ]{\fontsize{12pt}{14.4pt}\selectfont \textup{S}\textmd{\textup{ecure}}\textup{S}\textmd{\textup{ocket}}\textup{L}\textmd{\textup{ayer/}}\textup{T}\textmd{\textup{ransfer}}\textup{L}\textmd{\textup{ayer}}\textup{S}\textmd{\textup{ecurity}}\textup{ }}
+\begin{stylePi}
+Ett av de ansvarsområden som tilldelas transportprotokollet är att upprätta en anslutning, vilket är varför det är särskilt viktigt att nämna att det är i detta lager SSL/TLS protokollet har sin plats. Det innebär nämligen att såvida inte säkerhetskontrollerna lyckas så upprättas inte en anslutning. \textsuperscript{[5a]}
+\end{stylePi}
+
+
+\bigskip
+
+\begin{stylePi}
+Processen för SSL/TLS protokollet består av två olika steg, det första steger är \textit{autentisering}, och det andra är \textit{kryptering/dekryptering}. Eftersom SSL/TLS är baserat på \textit{certifikat}, måste båda parter bekräfta sin identitet för varandra genom att uppvisa digitalt signerade certifikat och validera dessa med certifikatutfärdaren innan autentiseringssteget är slutfört. Om detta misslyckas, upprättas ingen anslutning.
+\end{stylePi}
+
+
+\bigskip
+
+\begin{stylePi}
+Under steg två använder sig SSL/TLS utav två nycklar -- en publik och en privat. Den publika nyckeln används för att enkryptera, medans den privata nyckeln används för att dekryptera. Båda parter måste dela sin publika nyckel med den andra parten, och använder sedan de genererade privata nycklarna för att dekryptera datan de mottager när överföringen påbörjats. \ \textsuperscript{[5b]}
+\end{stylePi}
+
+\begin{stylePii}
+Till skillnad mot SSL/TLS så kräver vanlig SSL\textup{\textsuperscript{[6]}} endast att en part (servern) bekräftar sin identitet. 
+\end{stylePii}
+
+\begin{stylePii}
+Se bilaga 2 för en demonstration av hur ett TCP paket med SSL kan se ut.
+\end{stylePii}
+
+\subsection{OpenVPN}
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont OpenVPN, som betyder open-source Virtual Private Network, fungerar genom att skapa en krypterad tunnel av datapaket (ofta UDP, men kan även använda sig av TCP paket) mellan två punkter. Kortfattat innebär detta att OpenVPN upprättar en ström av krypterade datapaket mellan punkt A och punkt B, och förlitar sig helt på OpenSSL för kryptering, och kan }{\fontsize{11pt}{13.2pt}\selectfont därav använda sig av antingen certifikat genom en speciell implementering av \ \ SSL/TLS, eller på förhand utdelade statiska nycklar. En än mer föränklar förklaring vore att data överförd med hjälp av OpenVPN är inkapslad och krypterad inuti en krypterad tunnel av datapaket. }{\fontsize{11pt}{13.2pt}\selectfont \textsuperscript{[7] }}
+\end{styleStandard}
+
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont \textsuperscript{\ }}{\fontsize{11pt}{13.2pt}\selectfont \textit{Se bilaga 3 för en demonstration av ett UDP paket I en krypterad UDP tunnel kan se ut vid användning av OpenVPN}}
+\end{styleStandard}
+
+\subsection[The Onion Router]{\textbf{\textup{T}}\textup{he }\textbf{\textup{O}}\textup{nion }\textbf{\textup{R}}\textup{outer}}
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont TOR, som står för '}{\fontsize{11pt}{13.2pt}\selectfont \textit{The Onion Router}}{\fontsize{11pt}{13.2pt}\selectfont {}', är ett distribuerat nätverk ämnat för anonymisering på nätet. Detta fungerar genom att kapsla in data i flera lager kryptering, och slumpmässigt välja en väg från punkt A till punkt B genom nätverket i vilket ingen nod vet mer än vilken den föregående noden var, och vilken nästa nod på vägen till destinationen är. Var nod under vägen dekrypterar det översta lagret, innan paketet skickas vidare, och därav analogin till }{\fontsize{11pt}{13.2pt}\selectfont \textit{onion (lök) }}{\fontsize{11pt}{13.2pt}\selectfont i namnet.}
+\end{styleStandard}
+
+
+\bigskip
+
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont För kryptering använder sig TOR utav en }{\fontsize{11pt}{13.2pt}\selectfont \textit{ström chiffer }}{\fontsize{11pt}{13.2pt}\selectfont (128-bitar AES i counter-läge), Diffie-Hellman protokollet, en publik chiffer (}{\fontsize{11pt}{13.2pt}\selectfont \textit{1024-bitars RSA) }}{\fontsize{11pt}{13.2pt}\selectfont samt en hash funktion (}{\fontsize{11pt}{13.2pt}\selectfont \textit{SHA1}}{\fontsize{11pt}{13.2pt}\selectfont ).} {\fontsize{11pt}{13.2pt}\selectfont \textsuperscript{[8]}}
+\end{styleStandard}
+
+\begin{stylePii}
+Se bilaga 4 för en demonstration av hur ett datapaket kan se ut när TOR används
+\end{stylePii}
+
+
+\bigskip
+
+\begin{stylePiii}
+Eftersom alla dessa metoder bidrar till en komplicerad dekrypterinsprocess -- SSL kräver nycklar för dekryptering, medans TOR bidrar till att varje paket är krypterat i flera lager -- innebär det att det inte är resursvänligt överhuvudtaget att försöka dekryptera dem genom att försöka gissa sig till ursprungsdatan, och för att lyckas dekryptera dem tvingas man mer eller mindre se på protokollens svagheter.
+\end{stylePiii}
+
+
+\bigskip
+
+\begin{stylePi}
+TOR har en relativt uppenbar svaghet: eftersom varje nod dekrypterar ett lager, innebär detta att den sista noden på vägen till destinationen dekrypterar det sista lagret, vilket innebär att såvida inte en punk-till-punkt kryptering som TLS eller SSL/TLS används så kommer datatrafiken att vara okrypterad det allra sista steget. Därför bör det per definition gå att avlyssna den sista noden, \textit{exit node}, för att komma åt det dekrypterade innehållet, och kanske är avlyssning av slutnoder en av få, om inte den enda, effektiva lösningen för att avlyssna trafik I TOR nätverket \textsuperscript{[11]}.
+\end{stylePi}
+
+
+\bigskip
+
+\begin{stylePiii}
+För SSL å andra sidan ligger svagheten snarare hos användaren -- eftersom certifikat vars nycklar inte ser ut som de bör allt som oftast resulterar i en varning i användarens webbläsare, vilket frekvent sker då servrar använder sig av utdaterade certifikat, accepterar användare ofta dessa varningar och tar dem inte på allvar. Det innebär även att en tredje part skulle kunna agera som en slags osynlig relä mellan server och användare, och uppvisa ett fabrikerat certifikat i hopp om att användaren inte tar varningen på allvar och initierar uppkopplingen oavsett, vilket i slutändan leder till att tredje parten accepteras som en relä mellan användare och server och tillåts dekryptera överföringen.
+\end{stylePiii}
+
+
+\bigskip
+
+\begin{stylePiii}
+SSL är dock menat för att vara motståndskraftigt mot brute-force attacker, och gör det mycket svårt att dekryptera datan utan tillgång till nycklar. TOR, å andra sidan, är resistant mot brute-force attacker på grund av de flera lager av kryptering var datapaket kapslas in i. Både SSL och TOR har svagheter som mer eller mindre kräver en attack mot kommunikationen, servern eller klienten, och inte själva datan i sig. Däremot kan TOR i framtiden utsättas för avlyssning då slutnoder som befinner sig inom EU kan tvingas lagra den dekrypterade kommunikationen enligt exempelvis datalagringsdirektivet, men för närvarande ligger TORs svaghet i varesig slutnoden är pålitlig eller inte.
+\end{stylePiii}
+
+
+\bigskip
+
+\begin{stylePi}
+Även om dessa protokoll är användbara för kryptering och för att säkra kommunikation för de som känner behov för det, sägs det att vilket verktyg som helst kan bli ett vapen i fel händer -- men innebär det att alla som använder verktyget bör misstänkas göra det i fel syfte, och är det etiskt rätt att avlyssna TOR's slutnoder, eller förfalska SSL certifikat och lura användare, för att försäkra sig om att ingen kommer undan det syfte som dessa lagar införts för? Eller är nästa steg att försäkra oss om att dessa föreslagna och/eller introducerade lagar kan verkställas i det syfte de var menade för, oavsett? Behöver vi tänka över vad vår etik verkligen innebär, eller är dessa lagar\textsuperscript{[9][10]} etiskt definierade -- och i så fall, justifierar det användandet av dessa tekniker för att verkställa dem?
+\end{stylePi}
+
+\clearpage\subsection{Källförteckning}
+\begin{stylePiii}
+1. Structure of a TCP packet: RFC 793: Transmission control protocol, September 1981, section 3.1 page 15 (http://tools.ietf.org/html/rfc793),
+\end{stylePiii}
+
+\begin{stylePiii}
+2. Structure of UDP packet: RFC 768: User Datagram Protocol, 28 August 1980, http://tools.ietf.org/html/rfc768 
+\end{stylePiii}
+
+\begin{stylePi}
+3. Layers of TCP/IP: The TCP/IP model \url{http://technet.microsoft.com/en-us/library/cc786900(v=ws.10).aspx} 
+\end{stylePi}
+
+\begin{stylePiii}
+4. The Onion Router: www.torproject.org
+\end{stylePiii}
+
+\begin{stylePiii}
+5.
+\end{stylePiii}
+
+\begin{stylePiii}
+\ \ \ a. What is TLS/SSL? http://technet.microsoft.com/en-us/library/cc784450(WS.10).aspx 
+\end{stylePiii}
+
+\begin{stylePi}
+\ \ \ b. Authentication and data exchange: \url{http://technet.microsoft.com/en}{}-us/library/cc783349(v=ws.10).aspx\#w2k3tr\_schan\_how\_hkrr 
+\end{stylePi}
+
+
+\bigskip
+
+\begin{stylePiii}
+6. The SSL Protocol Version 3.0: RFC6101, August 2011 (http://tools.ietf.org/html/rfc6101) 
+\end{stylePiii}
+
+\begin{stylePiii}
+7. OpenVPN cryptographic layer: http://openvpn.net/index.php/open-source/documentation/security-overview.html 
+\end{stylePiii}
+
+\begin{stylePiii}
+8. TOR Protocol specification: https://gitweb.torproject.org/torspec.git/blob/HEAD:/tor-spec.txt 
+\end{stylePiii}
+
+\begin{stylePiii}
+9. Anti Counterfeiting Trade Agreement, draft from April 2010, http://trade.ec.europa.eu/doclib/docs/2010/april/tradoc\_146029.pdf 
+\end{stylePiii}
+
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont 10. Directive 2006/24/EC ({\textquotedbl}Data Retention Directive{\textquotedbl}), }\url{http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2006:105:0054:0063:EN:PDF}
+\end{styleStandard}
+
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont 11. }{\fontsize{11pt}{13.2pt}\selectfont {}``}{\fontsize{11pt}{13.2pt}\selectfont \textit{Rogue Nodes Turn Tor Anonymizer Into Eavesdropper's Paradise}}{\fontsize{11pt}{13.2pt}\selectfont {}'', Wired Magazine, 2007-09-10, }\url{http://www.wired.com/politics/security/news/2007/09/embassy_hacks}
+\end{styleStandard}
+
+\clearpage\subsection[Bilagor]{\fontsize{11pt}{13.2pt}\selectfont Bilagor}
+
+\bigskip
+
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont 1 -- \ }{\fontsize{11pt}{13.2pt}\selectfont \textit{Ett TCP paket innehållande meddelandet}}{\fontsize{11pt}{13.2pt}\selectfont  }{\fontsize{11pt}{13.2pt}\selectfont \textit{{}``o hai'' skicket över }}{\fontsize{11pt}{13.2pt}\selectfont \textbf{\textit{I}}}{\fontsize{11pt}{13.2pt}\selectfont \textit{nternet }}{\fontsize{11pt}{13.2pt}\selectfont \textbf{\textit{R}}}{\fontsize{11pt}{13.2pt}\selectfont \textit{elay }}{\fontsize{11pt}{13.2pt}\selectfont \textbf{\textit{C}}}{\fontsize{11pt}{13.2pt}\selectfont \textit{hat}}
+\end{styleStandard}
+
+
+\bigskip
+
+\begin{stylePvii}
+
+\end{stylePvii}
+
+\begin{center}
+\includegraphics[width=6.9252in,height=1.4346in]{Kryptigrafiochanonymitetformatterad-img001.png}
+\end{center}
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont 2 -- }{\fontsize{11pt}{13.2pt}\selectfont \textit{Ett TCP paket med SSL aktiverat, vars innehåll iövrigt är identiskt med paketet ovan}}
+\end{styleStandard}
+
+
+\bigskip
+
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont 3 -- }{\fontsize{11pt}{13.2pt}\selectfont \textit{Ett UDP paket i en UDP tunnel med OpenVPN}}
+\end{styleStandard}
+
+\begin{center}
+\includegraphics[width=6.9252in,height=1.3362in]{Kryptigrafiochanonymitetformatterad-img002.png}
+\end{center}
+\begin{styleStandard}
+{\fontsize{11pt}{13.2pt}\selectfont 4 -- }{\fontsize{11pt}{13.2pt}\selectfont \textit{Ett paket skickat via TOR nätverket}}
+\end{styleStandard}
+
+\begin{center}
+\includegraphics[width=6.9252in,height=1.3256in]{Kryptigrafiochanonymitetformatterad-img003.png}
+\end{center}
+
+\bigskip
+
+\begin{stylePvii}
+
+\end{stylePvii}
+\begin{center}
+\includegraphics[width=6.9252in,height=1.9465in]{Kryptigrafiochanonymitetformatterad-img004.png}
+\end{center}
+\end{document}
